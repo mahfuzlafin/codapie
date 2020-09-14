@@ -50,6 +50,7 @@ const globalErrorHandler = (err, req, res, next) => {
   } else if (process.env.NODE_ENV === 'production') {
     let error = { ...err };
 
+    // CastError
     if (error.name === 'CastError') error = handleCastErrorDB(error);
 
     sendErrorProd(error, res);
