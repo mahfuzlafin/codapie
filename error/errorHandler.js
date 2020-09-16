@@ -1,12 +1,10 @@
 // import
 const AppError = require('../error/AppError');
 
-// import
 // handleCastErrorDB
 // sendErrorDev
 // sendErrorProd
 // globalErrorHandler
-// export
 
 // handleCastErrorDB
 const handleCastErrorDB = err => {
